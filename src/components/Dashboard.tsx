@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Shield, LogOut, FileText } from 'lucide-react';
+import { Shield, LogOut, FileText, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/useAuth';
 import { supabase } from '@/integrations/supabase/client';
@@ -75,10 +75,21 @@ export function Dashboard() {
           <h1 className="text-3xl sm:text-4xl font-semibold text-foreground mb-3">
             Secure Upload Zone
           </h1>
-          <p className="text-muted-foreground max-w-md mx-auto">
+          <p className="text-muted-foreground max-w-md mx-auto mb-4">
             Upload your documents safely. Our AI Guard scans every file for 
             potential security leaks before storing.
           </p>
+          <Button
+            variant="outline"
+            size="sm"
+            asChild
+            className="gap-2"
+          >
+            <a href="/demo-document.txt" download="demo-document.txt">
+              <Download className="w-4 h-4" />
+              Download Sample Document
+            </a>
+          </Button>
         </div>
 
         {/* Upload Zone */}
