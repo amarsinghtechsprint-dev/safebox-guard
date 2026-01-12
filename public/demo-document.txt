@@ -1,0 +1,14 @@
+SafeBox Demo Document
+=====================
+
+This is a sample document for testing the SafeBox secure document portal.
+
+Project Overview:
+- AI-powered document scanning
+- Secure file storage
+- Time-expiring share links
+
+This document contains NO sensitive information and should pass AI Guard security scanning.
+
+Created: January 2026
+Purpose: Testing upload functionality
